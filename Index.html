@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia-Rich Webpage</title>
+    <style>
+        /* General Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        h2, h3 {
+            color: #007bff;
+        }
+
+        /* Image Styles */
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Form Styles */
+        form {
+            margin-top: 20px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .checkbox-group label, .radio-group label {
+            display: block;
+            margin-top: 5px;
+        }
+        
+        /* Multimedia Styles */
+        video, audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Multimedia-Rich Webpage</h2>
+    
+    <!-- Embedded Image -->
+    <h3>Embedded Image</h3>
+    <img src="https://via.placeholder.com/400" alt="Sample Image">
+
+    <!-- Embedded Audio -->
+    <h3>Audio Element</h3>
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Embedded Video -->
+    <h3>Video Element</h3>
+    <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Registration Form -->
+    <h3>Registration Form</h3>
+    <form action="#" method="post">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password">
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Gender (Radio Buttons) -->
+        <div class="form-group radio-group">
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+
+        <!-- Profession (Dropdown) -->
+        <div class="form-group">
+            <label for="profession">Profession:</label>
+            <select id="profession" name="profession" required>
+                <option value="">Select Profession</option>
+                <option value="Student">Student</option>
+                <option value="Developer">Developer</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Skills (Checkboxes) -->
+        <div class="form-group checkbox-group">
+            <label>Skills:</label>
+            <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+            <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+            <label><input type="checkbox" name="skills" value="Python"> Python</label>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Embedded Table -->
+    <h3>Sample Table</h3>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Fee</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>3 Months</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Python Programming</td>
+            <td>4 Months</td>
+            <td>$400</td>
+        </tr>
+    </table>
+
+    <!-- List Example -->
+    <h3>Programming Languages to Learn</h3>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ul>
+</div>
+
+</body>
+</html>
+  
