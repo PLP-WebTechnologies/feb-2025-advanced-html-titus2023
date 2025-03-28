@@ -9,7 +9,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: black;
         }
         .container {
             background: white;
@@ -30,6 +31,11 @@
             display: block;
             margin: 10px auto;
             border-radius: 8px;
+        }
+        /* Multimedia Styles */
+        video, audio {
+            width: 100%;
+            margin-top: 10px;
         }
 
         /* Table Styles */
@@ -75,11 +81,6 @@
             margin-top: 5px;
         }
         
-        /* Multimedia Styles */
-        video, audio {
-            width: 100%;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
@@ -88,20 +89,20 @@
     <h2>Multimedia-Rich Webpage</h2>
     
     <!-- Embedded Image -->
-    <h3>Embedded Image</h3>
-    <img src="https://via.placeholder.com/400" alt="Sample Image">
+    <h3>A Beautiful Image</h3>
+    <img src="im1.jpg" alt="My Image">
 
     <!-- Embedded Audio -->
-    <h3>Audio Element</h3>
+    <h3>Cool Music</h3>
     <audio controls>
-        <source src="sample-audio.mp3" type="audio/mpeg">
+        <source src="Tupa_Lines_Vocal_Boy_Official_Audio.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <!-- Embedded Video -->
-    <h3>Video Element</h3>
-    <video controls>
-        <source src="sample-video.mp4" type="video/mp4">
+    <h3>Video Palace</h3>
+    <video  autoplay muted loop>
+        <source src="VID_20231123_090522.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -126,9 +127,9 @@
             <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password">
         </div>
 
-        <!-- Date of Birth -->
+        <!-- Date of Reistration -->
         <div class="form-group">
-            <label for="dob">Date of Birth:</label>
+            <label for="dob">Date of Reistration:</label>
             <input type="date" id="dob" name="dob" required>
         </div>
 
@@ -166,33 +167,59 @@
     </form>
 
     <!-- Embedded Table -->
-    <h3>Sample Table</h3>
+    <h3>Application Received</h3>
     <table>
         <tr>
-            <th>Course</th>
-            <th>Duration</th>
-            <th>Fee</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
         </tr>
         <tr>
-            <td>Web Development</td>
-            <td>3 Months</td>
-            <td>$300</td>
+            <td>Titus Nzomo</td>
+            <td>Watamu 45 street</td>
+            <td>0768949273</td>
+            <td>titus@gmail.com</td>
+
         </tr>
         <tr>
-            <td>Python Programming</td>
-            <td>4 Months</td>
-            <td>$400</td>
+            <td>Catherine Imali</td>
+            <td>Kakuyuni Massive</td>
+            <td>0717008691</td>
+            <td>catherine@gmail.com</td>
+
+        </tr>
+        <tr>
+            <td>Paul Mutiso</td>
+            <td>Matuu east</td>
+            <td>0717008691</td>
+            <td>paul@gmail.com</td>
+
+        </tr>
+        <tr>
+            <td>Moses Muasya</td>
+            <td>Makueni west </td>
+            <td>0111314785</td>
+            <td>moses@gmail.com</td>
+
+        </tr>
+        <tr>
+            <td>Timothy Jevori</td>
+            <td>Pwani University </td>
+            <td>0717008691</td>
+            <td>timothy@gmail.com</td>
+
         </tr>
     </table>
 
     <!-- List Example -->
     <h3>Programming Languages to Learn</h3>
-    <ul>
+    <ol type="i">
         <li>HTML & CSS</li>
         <li>JavaScript</li>
         <li>Python</li>
         <li>Java</li>
-    </ul>
+    </ol>
 </div>
 
 </body>
